@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import { GetApplicationsFetch } from "../../../fetch/GetApplicationsFetch";
+import NewApplication from "../NewApplication/NewApplication";
+import "./Applications.css"
+
 function Applications() {
     const [applications, setApplications] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -25,7 +28,8 @@ function Applications() {
     if (error) return <div className="error">Ошибка: {error}</div>;
 
     return (
-        <div>
+        <div className="personalAccountFull">
+            <NewApplication/>
             <h2>Ваши заявки</h2>
 
             <ul>
