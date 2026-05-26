@@ -46,7 +46,11 @@ function Admin() {
                 {applications.map((el) => (
                     <li key={el.id}>
                         <h3>{el.course_name}</h3>
-                        <p><strong>Пользователь:</strong> #{el.user_id} ({el.login})</p>
+                        <p>
+                            <strong>Пользователь:</strong>{' '}
+                            {el.full_name}
+                        </p>
+
                         <p><strong>Желаемая дата:</strong> {el.desired_start_date}</p>
                         <p><strong>Оплата:</strong> {el.payment_method}</p>
 

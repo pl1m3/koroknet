@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link, useNavigate } from 'react-router-dom'
 import { AutFetch } from "../../../fetch/AutFetch"
-
+import './AutForm.css'
 
 function AutForm() {
     const [login, setLogin] = useState("")
@@ -42,7 +42,7 @@ function AutForm() {
         <div className="formFull">
             <h2>Авторизация</h2>
             <form action="" onSubmit={valid}>
-                {err && <span>{err}</span>}
+                {err && <span className="err">{err}</span>}
                 <div className="inputFull">
                     <label htmlFor="">Логин</label>
                     <input type="text" value={login} onChange={handleLogin} />

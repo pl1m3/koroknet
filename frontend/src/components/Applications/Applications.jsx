@@ -31,7 +31,6 @@ function Applications() {
         <div className="personalAccountFull">
             <NewApplication/>
             <h2>Ваши заявки</h2>
-
             <ul>
                 {applications.map((app) => (
                     <li key={app.id}>

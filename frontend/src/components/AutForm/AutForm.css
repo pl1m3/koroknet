@@ -14,3 +14,7 @@ form{
     display: flex;
     justify-content: space-between;
 }
+
+.err{
+    color: red;
+}

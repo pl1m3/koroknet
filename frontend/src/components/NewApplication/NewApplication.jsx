@@ -127,7 +127,6 @@ function NewApplication() {
                 </button>
 
             </form>
-            <Link to="/applications">Вернуться к списку заявок</Link>
         </div>
     )
 }
